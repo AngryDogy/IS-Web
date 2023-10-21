@@ -134,6 +134,11 @@ h1, h2, h3, h4, h5, h6 {
     display: grid;
     overflow-x: auto;
 }
+@media only screen and (max-width: 2000px) {
+    .table-container {
+        display: none;
+    }
+}
 
 .grid-table {
     width: 100%;
