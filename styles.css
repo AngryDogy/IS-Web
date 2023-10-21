@@ -19,18 +19,14 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
 }
 .header__image-container {
-    @media screen {
-        .element {
-            display: none;
-        }
-    }
     display: flex;
     flex-direction: column;
     justify-content: start;
 }
 .header__image-title {
-    margin: 0 55px 0;
-    padding: 10px;
+    position: absolute;
+    top: 4px;
+    left: 75px;
     font-family: cursive;
     font-size: 40px;
     color: white;
@@ -38,7 +34,7 @@ h1, h2, h3, h4, h5, h6 {
 .header__coffee-image {
     width: 200px;
     height: auto;
-    margin: 10px;
+    margin: 20px 20px 0;
     padding: 10px;
     border-radius: 50%;
     filter: drop-shadow(0 0 3px rgba(100,0,0,0.5));
