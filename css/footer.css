@@ -1,0 +1,17 @@
+.footer {
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    align-content: center;
+    position: absolute;
+    width: 100%;
+    height: 20vh;
+    background: black;
+}
+.footer__goodbye-text {
+    font-family: sans-serif;
+    font-size: 30px;
+    line-height: 150px;
+    text-align: center;
+    color: white;
+}

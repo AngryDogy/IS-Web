@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+@media only screen and (max-width: 2000px) {
+    .table-container {
+        display: none;
+    }
+}
+
+.grid-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.grid-table th,
+.grid-table td {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.grid-table thead th {
+    background-color: lightgray;
+}
+
+.grid-table tbody tr:nth-child(even) {
+    background-color: lightblue;
+}
+
+.grid-table tbody tr:nth-child(odd) {
+    background-color: lightgreen;
+}
