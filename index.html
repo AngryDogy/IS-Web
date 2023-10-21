@@ -9,8 +9,10 @@
 <body>
 
 <div class="header">
-    <h1 class="header__title">Coffee~~</h1>
-    <img class="header__coffee-image" src="coffee_pic_1.jpg" alt="Coffee image">
+    <div class="header__image-container">
+        <h1 class="header__image-title">Coffee~~</h1>
+        <img class="header__coffee-image" src="coffee_pic_1.jpg" alt="Coffee image">
+    </div>
     <nav class="header__menu">
         <h2>
             <a class="header__link">Cafe Menu</a>
@@ -23,28 +25,33 @@
 </div>
 
 <main class="main">
-    <section class="main__welcome">
-        <p class="main__welcome-title"> Where coffee dreams come to life. </p>
-        <p class="main__welcome-text"> Welcome to Coffee~~, the ultimate destination for coffee lovers seeking a unique and
-            unforgettable
-            experience.
-            Nestled in the heart of SPB, our cafe exudes a warm and inviting atmosphere, perfect for catching up with
-            friends, browsing the web, or simply enjoying a quiet moment alone.
-            We pride ourselves on serving the highest quality coffee, sourced from renowned local and international
-            roasters who share our commitment to excellence.</p>
+    <section class="welcome">
+        <div class="welcome__image">
+            <img class="welcome__coffee-image" src="coffee_pic_2.jpg" alt="Coffee image">
+            <p class="welcome__aside-text"><i>The taste that remains forever</i></p>
+        </div>
+        <div class="welcome__text-container">
+            <p class="welcome__title"> Where coffee dreams come to life. </p>
+            <p class="welcome__text">
+                Welcome to Coffee~~, the ultimate destination for coffee lovers seeking a unique and
+                unforgettable
+                experience.
+                Nestled in the heart of SPB, our cafe exudes a warm and inviting atmosphere, perfect for catching up with
+                friends, browsing the web, or simply enjoying a quiet moment alone.
+                We pride ourselves on serving the highest quality coffee, sourced from renowned local and international
+                roasters who share our commitment to excellence.</p>
+            <article class="review">
+                <blockquote class="review__blockquote">
+                    <p class="review__quote"> "As someone who values a peaceful and comfortable environment to work, Coffee~~
+                        checks all the boxes.
+                        It's my go-to spot for productive afternoons.
+                        The coffee selection is amazing, and the staff is always accommodating. Highly recommended!" </p>
+                    <cite class="review__author"><strong>Alex T.</strong></cite>
+                </blockquote>
+            </article>
+        </div>
     </section>
-    <img class="main__coffee-image" src="coffee_pic_2.jpg" alt="Coffee image">
-    <article class="review">
-        <blockquote class="review__blockquote">
-            <p class="review__quote"> "As someone who values a peaceful and comfortable environment to work, Cafe Name
-                checks all the boxes.
-                It's my go-to spot for productive afternoons.
-                The coffee selection is amazing, and the staff is always accommodating. Highly recommended!" </p>
-            <cite class="review__author"><strong>Alex T.</strong></cite>
-        </blockquote>
-    </article>
 
-    <aside class="main__aside"><i>The taste that remains forever</i></aside>
 
 </main>
 <footer class="footer">
