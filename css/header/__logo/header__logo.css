@@ -1,0 +1,19 @@
+.header__image-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+}
+.header__image-title {
+    font-family: cursive;
+    font-size: 40px;
+    color: white;
+}
+.header__coffee-image {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    filter: drop-shadow(0 0 3px rgba(100,0,0,0.5));
+}
