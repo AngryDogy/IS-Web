@@ -11,6 +11,12 @@
     font-size: 40px;
     color: white;
 }
+.header__image-title-orange {
+    font-family: cursive;
+    font-size: 40px;
+    color: orange;
+
+}
 .header__coffee-image {
     width: 200px;
     height: auto;
