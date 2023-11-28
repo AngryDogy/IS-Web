@@ -1,0 +1,18 @@
+.header__menu{
+    display: flex;
+    gap: 90px;
+    justify-content: space-between;
+    font-size: 45px;
+    color: white;
+}
+.header__linkActive {
+    color: orange;
+}
+.header__link:hover {
+    color:orange;
+}
+.active {
+    color:orange;
+    text-decoration: underline;
+
+}
