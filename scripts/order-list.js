@@ -8,6 +8,9 @@ for (i = 0; i < myNodelist.length; i++) {
     myNodelist[i].appendChild(span);
 }
 
+
+
+
 var close = document.getElementsByClassName("close");
 var i;
 for (i = 0; i < close.length; i++) {
@@ -24,9 +27,21 @@ list.addEventListener('click', function(ev) {
     }
 }, false);
 
-
-{
-    var key = 0
+for (i = 0; i < localStorage.length; i++){
+    var li = document.createElement("li");
+    var t = document.createTextNode(localStorage.getItem(i.toString()))
+    li.appendChild(t)
+    document.getElementById("myUL").appendChild(li)
+    var span = document.createElement("SPAN");
+    var txt = document.createTextNode("\u00D7");
+    span.className = "close";
+    span.appendChild(txt);
+    li.appendChild(span);
+    var last = close.length - 1
+    close[last].onclick = function () {
+        var div = this.parentElement;
+        div.style.display = "none";
+    }
 }
 function newElement() {
     var li = document.createElement("li");
@@ -37,8 +52,8 @@ function newElement() {
         alert("You must write something!");
     } else {
         document.getElementById("myUL").appendChild(li);
-        localStorage.setItem(key.toString(), inputValue)
-        key++
+        var size = localStorage.length
+        localStorage.setItem(size.toString(), inputValue)
     }
     document.getElementById("input").value = "";
 
