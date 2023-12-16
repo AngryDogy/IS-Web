@@ -1,5 +1,21 @@
+
 document.addEventListener('DOMContentLoaded', async () => {
     let randomId = Math.floor(Math.random() * 10) + 1;
+    if (!localStorage.getItem('filter')) {
+        localStorage.setItem('filter', '0');
+    }
+    console.log(localStorage.getItem('filter'))
+    if (localStorage.getItem('filter') === '0') {
+        if (randomId % 2 !== 0) {
+            randomId++
+        }
+        localStorage.setItem('filter', '1')
+    } else {
+        if (randomId % 2 === 0) {
+            randomId--
+        }
+        localStorage.setItem('filter', '0')
+    }
 
     const url = `https://jsonplaceholder.typicode.com/users/${randomId}`;
 
