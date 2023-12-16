@@ -1,0 +1,37 @@
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+
+}
+.profile__user {
+    display: flex;
+    gap: 30px;
+    align-content: center;
+    align-items: center;
+}
+.profile__preloader-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    filter: drop-shadow(0 0 3px rgba(100,0,0,0.5));
+}
+
+.profile__error-message {
+    font-size: 50px;
+}
+.profile__avatar {
+    border-radius: 50%;
+    filter: drop-shadow(0 0 3px rgba(100,0,0,0.5));
+}
