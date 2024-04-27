@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../css/header__logo.css">
     <link rel="stylesheet" href="../css/header__menu.css">
     <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/main__welcome.css">
+    <link rel="stylesheet" href="../css/main__profile.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/footer__footer-text.css">
     <link rel="stylesheet" href="../css/footer__loadtime-text.css">
@@ -22,7 +22,7 @@
 <div class="header">
     <div class="header__image-container">
         <h1 class="header__image-title" id="colorful-title">Coffee~~</h1>
-        <a class="header__link" id="index.html" href="index.html"> <img class="header__coffee-image" src="../images/coffee_pic_1.jpg" alt="Coffee image"> </a>
+        <a class="header__link" id="index.html" href="../index.html"> <img class="header__coffee-image" src="../images/coffee_pic_1.jpg" alt="Coffee image"> </a>
     </div>
     <nav class="header__menu">
         <a class="header__link" id="cafe_menu.html" href="cafe_menu.html">Cafe Menu</a>
@@ -36,8 +36,39 @@
 </div>
 
 <main class="main">
-    <h1>Here you can register for bonus program</h1>
-
+    <div class="profile">
+        <h1>Bonus program user profile</h1>
+        <div class="profile__user">
+            <div>
+                <img id="user-avatar" class="profile__avatar" src="../images/avatar.jpg" alt="User Avatar" style="width: 15vw">
+            </div>
+            <div class="profile__info">
+                <div>
+                    <strong>Name:</strong> <span id="user-name"></span>
+                </div>
+                <div>
+                    <strong>Username: </strong> <span id="user-username"></span>
+                </div>
+                <div>
+                    <strong>Email:</strong> <span id="user-email"></span>
+                </div>
+                <div>
+                    <strong>Phone:</strong> <span id="user-phone"></span>
+                </div>
+                <div>
+                    <strong>Address:</strong> <span id="user-address"></span>
+                </div>
+                <div>
+                    <strong>Company:</strong> <span id="user-company"></span>
+                </div>
+            </div>
+        </div>
+        <div id="preloader" class="profile__preloader">
+            <img src="../images/load.gif" class="profile__preloader-image" alt="Preloader Animation">
+        </div>
+        <div id="error-message" class="profile__error-message"></div>
+        <script src="../scripts/user_loader.js"></script>
+    </div>
 
 </main>
 <footer class="footer">
